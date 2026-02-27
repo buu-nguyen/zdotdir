@@ -38,3 +38,22 @@ unset _rc
 
 # To customize prompt, run `p10k configure` or edit .p10k.zsh.
 [[ ! -f ${ZDOTDIR:-$HOME}/.p10k.zsh ]] || source ${ZDOTDIR:-$HOME}/.p10k.zsh
+
+# Homebrew
+case `uname` in
+  Linux)
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+    ;;
+  Darwin)
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    ;;
+esac
+
+# Rust
+source "$HOME/.cargo/env"
+
+# Source homedir .zshrc if it exists
+[[ -f $HOME/.zshrc ]] && source $HOME/.zshrc
+
+# GPG TTY for terminal pinentry
+export GPG_TTY=$(tty)
