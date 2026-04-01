@@ -39,3 +39,6 @@ alias please=sudo
 alias zshrc='${EDITOR:-vim} "${ZDOTDIR:-$HOME}"/.zshrc'
 alias zbench='for i in {1..10}; do /usr/bin/time zsh -lic exit; done'
 alias zdot='cd ${ZDOTDIR:-~}'
+
+# nvim
+alias vim="nvim"
