@@ -57,3 +57,10 @@ source "$HOME/.cargo/env"
 
 # GPG TTY for terminal pinentry
 export GPG_TTY=$(tty)
+
+# bun completions
+[ -s "/home/blue/.bun/_bun" ] && source "/home/blue/.bun/_bun"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
