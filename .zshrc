@@ -44,3 +44,6 @@ unset _rc
 
 # GPG TTY for terminal pinentry
 export GPG_TTY=$(tty)
+
+# bun completions
+[ -s "/home/blue/.bun/_bun" ] && source "/home/blue/.bun/_bun"

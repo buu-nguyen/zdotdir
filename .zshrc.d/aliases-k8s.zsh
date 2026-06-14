@@ -1,5 +1,3 @@
-
-## Kubectl alias
 # other
 alias k='kubectl'
 alias kl='kubectl logs'
@@ -103,17 +101,3 @@ alias kcfggc='kubectl config get-contexts'
 alias kcfgsc='kubectl config set-context'
 alias kcfguc='kubectl config use-context'
 alias kcfgv='kubectl config view'
-
-# Kubescape related
-alias kssbom='kubectl -n kubescape get sbomspdxv2p3s'
-alias kssbomf='kubectl -n kubescape get sbomspdxv2p3filtereds'
-alias kssboms='kubectl -n kubescape get sbomsummaries'
-alias ksvulns='kubectl -n kubescape get vulnerabilitymanifestsummaries'
-alias ksvuln='kubectl -n kubescape get vulnerabilitymanifests'
-
-# Kubescape related with labels
-alias kssboml='kubectl -n kubescape get sbomspdxv2p3s --show-labels'
-alias kssbomfl='kubectl -n kubescape get sbomspdxv2p3filtereds --show-labels'
-alias kssbomsl='kubectl -n kubescape get sbomsummaries --show-labels'
-alias ksvulnsl='kubectl -n kubescape get vulnerabilitymanifestsummaries --show-labels'
-alias ksvulnl='kubectl -n kubescape get vulnerabilitymanifests --show-labels'
