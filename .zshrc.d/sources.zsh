@@ -4,6 +4,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 SOURCES=(
     "$HOME/.cargo/env"
     "$BUN_INSTALL/bin"
+    "$BUN_INSTALL/_bun"
     "$SDKMAN_DIR/bin/sdkman-init.sh"
 )
 
