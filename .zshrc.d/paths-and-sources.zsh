@@ -1,7 +1,9 @@
 PATHS=(
     "/usr/local/go/bin"
     "$HOME/.bun/bin"
+    "$HOME/.cache/.bun/bin"
     "$HOME/.opencode/bin"
+    "$HOME/.local/share/fnm"
 )
 
 export PATH="$(IFS=:; echo "${PATHS[*]}"):$PATH"
