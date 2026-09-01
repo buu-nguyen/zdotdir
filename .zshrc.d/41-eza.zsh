@@ -1,7 +1,15 @@
-(( $+commands[eza] )) || return 1
+#!/bin/zsh
+#
+# ls - eza when available, coreutils otherwise
+#
 
 # mask ls with eza
-alias ls='eza --group-directories-first --icons=auto --git'
+if (( $+commands[eza] )); then
+    alias ls='eza --group-directories-first --icons=auto --git'
+    alias lt='ls --tree --level=2'
+fi
 
-# tree view
-alias lt='ls --tree --level=2'
+# more ways to ls
+alias ll='ls -lh'
+alias la='ls -lAh'
+alias ldot='ls -ld .*'
