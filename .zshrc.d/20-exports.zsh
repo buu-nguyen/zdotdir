@@ -1,1 +1,2 @@
 export OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS=1
+export LITELLM_BASE_URL=https://llm.thealtoclef.com
